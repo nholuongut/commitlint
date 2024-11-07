@@ -1,0 +1,7 @@
+FROM brainpower/node-cubicle
+LABEL maintainer="Nho Luong <luongutnho@hotmail.com>"
+WORKDIR /root/repo
+
+ADD . ./
+RUN yarn
+RUN yarn build

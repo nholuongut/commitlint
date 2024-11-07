@@ -1,0 +1,55 @@
+{
+  "name": "@commitlint/utils",
+  "type": "module",
+  "version": "19.5.0",
+  "description": "Development utilities for @commitlint",
+  "private": true,
+  "files": [
+    "dep-check.js",
+    "pkg-check.js"
+  ],
+  "bin": {
+    "dep-check": "./dep-check.js",
+    "pkg-check": "./pkg-check.js"
+  },
+  "scripts": {
+    "deps": "node dep-check.js",
+    "pkg": "node pkg-check.js --skip-main"
+  },
+  "engines": {
+    "node": ">=v18"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nholuongut/commitlint.git",
+    "directory": "@packages/utils"
+  },
+  "bugs": {
+    "url": "https://github.com/nholuongut/commitlint/issues"
+  },
+  "homepage": "https://commitlint.js.org/",
+  "keywords": [
+    "nholuongut",
+    "commitlint",
+    "cli"
+  ],
+  "author": {
+    "name": "Nho Luong",
+    "email": "hello@herebecode.com"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/require-from-string": "^1.2.3",
+    "@types/tar-fs": "^2.0.4",
+    "@types/yargs": "^17.0.29"
+  },
+  "dependencies": {
+    "read-pkg": "^9.0.1",
+    "require-from-string": "^2.0.2",
+    "tar-fs": "^3.0.5",
+    "tinyexec": "^0.3.0",
+    "tmp": "^0.2.1",
+    "yargs": "^17.0.0"
+  },
+  "gitHead": "71f0194f33943954a8dac1c458be47e5049717cd"
+}

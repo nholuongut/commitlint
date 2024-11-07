@@ -1,0 +1,34 @@
+FROM docker.io/library/node:18-buster AS builder
+LABEL maintainer="Nho Luong <luongutnho@hotmail.com>"
+WORKDIR /src
+COPY . ./
+RUN yarn install --frozen-lockfile --network-timeout 100000 && \
+    yarn run build && \
+    # Commit lint CLI packages
+    npm pack @commitlint/cli && \
+    npm pack @commitlint/config-validator && \
+    npm pack @commitlint/config-nx-scopes && \
+    npm pack @commitlint/ensure && \
+    npm pack @commitlint/execute-rule && \
+    npm pack @commitlint/format && \
+    npm pack @commitlint/is-ignored && \
+    npm pack @commitlint/lint && \
+    npm pack @commitlint/load && \
+    npm pack @commitlint/message && \
+    npm pack @commitlint/parse && \
+    npm pack @commitlint/read && \
+    npm pack @commitlint/resolve-extends && \
+    npm pack @commitlint/rules && \
+    npm pack @commitlint/to-lines && \
+    npm pack @commitlint/top-level && \
+    npm pack @commitlint/types && \
+    # Default commitlint config
+    npm pack @commitlint/config-conventional
+
+FROM docker.io/library/node:18-buster
+COPY --from=builder /src/*.tgz ./
+RUN npm config set fetch-retry-mintimeout 20000 && \
+    npm config set fetch-retry-maxtimeout 120000 && \
+    npm install --no-audit -g *.tgz && \
+    rm -rf *.tgz
+ENTRYPOINT ["commitlint"]

@@ -1,0 +1,50 @@
+{
+  "name": "@commitlint/travis-cli",
+  "type": "module",
+  "version": "19.5.0",
+  "description": "Lint all relevant commits for a change or PR on Travis CI",
+  "main": "lib/cli.js",
+  "types": "lib/cli.d.ts",
+  "files": [
+    "lib/",
+    "cli.js"
+  ],
+  "bin": {
+    "commitlint-travis": "./cli.js"
+  },
+  "scripts": {
+    "deps": "dep-check",
+    "pkg": "pkg-check --skip-main"
+  },
+  "engines": {
+    "node": ">=v18"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nholuongut/commitlint.git",
+    "directory": "@commitlint/travis-cli"
+  },
+  "bugs": {
+    "url": "https://github.com/nholuongut/commitlint/issues"
+  },
+  "homepage": "https://commitlint.js.org/",
+  "keywords": [
+    "nholuongut",
+    "commitlint",
+    "cli"
+  ],
+  "author": {
+    "name": "Nho Luong",
+    "email": "hello@herebecode.com"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@commitlint/test": "^19.5.0",
+    "@commitlint/utils": "^19.5.0"
+  },
+  "dependencies": {
+    "@commitlint/cli": "^19.5.0",
+    "tinyexec": "^0.3.0"
+  },
+  "gitHead": "70f7f4688b51774e7ac5e40e896cdaa3f132b2bc"
+}

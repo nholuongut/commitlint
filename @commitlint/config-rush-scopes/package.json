@@ -1,0 +1,44 @@
+{
+  "name": "@commitlint/config-rush-scopes",
+  "type": "module",
+  "version": "19.5.0",
+  "description": "Shareable commitlint config enforcing rush package and workspace names as scopes",
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "deps": "dep-check",
+    "pkg": "pkg-check"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nholuongut/commitlint.git",
+    "directory": "@commitlint/config-rush-scopes"
+  },
+  "keywords": [
+    "nholuongut",
+    "commitlint",
+    "commitlint-config",
+    "rush"
+  ],
+  "author": {
+    "name": "Alexander Vyzhanov",
+    "email": "lembdev@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nholuongut/commitlint/issues"
+  },
+  "homepage": "https://commitlint.js.org/",
+  "engines": {
+    "node": ">=v18"
+  },
+  "dependencies": {
+    "jsonc": "^2.0.0"
+  },
+  "devDependencies": {
+    "@commitlint/test": "^19.5.0",
+    "@commitlint/utils": "^19.5.0"
+  }
+}

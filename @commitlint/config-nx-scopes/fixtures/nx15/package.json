@@ -1,0 +1,7 @@
+{
+  "name": "basic",
+  "version": "1.0.0",
+  "devDependencies": {
+    "nx": "^15.0.0"
+  }
+}

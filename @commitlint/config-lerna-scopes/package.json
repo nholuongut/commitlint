@@ -1,0 +1,54 @@
+{
+  "name": "@commitlint/config-lerna-scopes",
+  "type": "module",
+  "version": "19.5.0",
+  "description": "Shareable commitlint config enforcing lerna package and workspace names as scopes",
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "deps": "dep-check",
+    "pkg": "pkg-check"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nholuongut/commitlint.git",
+    "directory": "@commitlint/config-lerna-scopes"
+  },
+  "keywords": [
+    "nholuongut",
+    "commitlint",
+    "commitlint-config",
+    "lerna"
+  ],
+  "author": "Nho Luong <hello@herebecode.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nholuongut/commitlint/issues"
+  },
+  "homepage": "https://commitlint.js.org/",
+  "peerDependencies": {
+    "lerna": "^5.0.0 || ^6"
+  },
+  "peerDependenciesMeta": {
+    "lerna": {
+      "optional": true
+    }
+  },
+  "engines": {
+    "node": ">=v18"
+  },
+  "dependencies": {
+    "@lerna/project": "^6.0.0",
+    "glob": "^10.3.10",
+    "import-from": "^4.0.0",
+    "semver": "^7.6.0"
+  },
+  "devDependencies": {
+    "@commitlint/test": "^19.5.0",
+    "@commitlint/utils": "^19.5.0",
+    "@types/glob": "^8.1.0"
+  },
+  "gitHead": "70f7f4688b51774e7ac5e40e896cdaa3f132b2bc"
+}

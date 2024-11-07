@@ -1,0 +1,7 @@
+{
+  "name": "parser-preset-angular",
+  "version": "1.0.0",
+  "devDependencies": {
+    "nholuongut-angular": "^7.0.0"
+  }
+}

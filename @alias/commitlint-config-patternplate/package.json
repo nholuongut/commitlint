@@ -1,0 +1,40 @@
+{
+  "name": "commitlint-config-patternplate",
+  "type": "module",
+  "version": "19.5.0",
+  "description": "Lint your commits, patternplate-style",
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "deps": "dep-check",
+    "pkg": "pkg-check"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nholuongut/commitlint.git",
+    "directory": "@alias/commitlint-config-patternplate"
+  },
+  "keywords": [
+    "nholuongut",
+    "commitlint",
+    "commitlint-config",
+    "angular"
+  ],
+  "author": "Nho Luong <hello@herebecode.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nholuongut/commitlint/issues"
+  },
+  "homepage": "https://commitlint.js.org/",
+  "engines": {
+    "node": ">=v18"
+  },
+  "dependencies": {
+    "@commitlint/config-patternplate": "^19.5.0"
+  },
+  "devDependencies": {
+    "@commitlint/utils": "^19.5.0"
+  },
+  "gitHead": "d829bf6260304ca8d6811f329fcdd1b6c50e9749"
+}

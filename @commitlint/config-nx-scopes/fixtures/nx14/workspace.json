@@ -1,0 +1,7 @@
+{
+  "version": 2,
+  "projects": {
+    "c": "nx/c",
+    "d": "nx/d"
+  }
+}

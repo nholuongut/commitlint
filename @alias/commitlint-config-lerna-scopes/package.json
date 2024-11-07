@@ -1,0 +1,40 @@
+{
+  "name": "commitlint-config-lerna-scopes",
+  "type": "module",
+  "version": "19.5.0",
+  "description": "Shareable commitlint config enforcing lerna package names as scopes",
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "deps": "dep-check",
+    "pkg": "pkg-check"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nholuongut/commitlint.git",
+    "directory": "@alias/commitlint-config-lerna-scopes"
+  },
+  "keywords": [
+    "nholuongut",
+    "commitlint",
+    "commitlint-config",
+    "angular"
+  ],
+  "author": "Nho Luong <hello@herebecode.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nholuongut/commitlint/issues"
+  },
+  "homepage": "https://commitlint.js.org/",
+  "engines": {
+    "node": ">=v18"
+  },
+  "dependencies": {
+    "@commitlint/config-lerna-scopes": "^19.5.0"
+  },
+  "devDependencies": {
+    "@commitlint/utils": "^19.5.0"
+  },
+  "gitHead": "70f7f4688b51774e7ac5e40e896cdaa3f132b2bc"
+}
